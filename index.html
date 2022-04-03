@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website build with HTML,CSS">
+    <meta name="author" content="Bhargav Mungara">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+
+        <header>
+            <h1>Bhargav Mungara</h1>
+        </header>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+
+    </nav>
+
+
+    <main>
+        <article id="about">
+            <h2>About</h2>
+            <img src="https://placekitten.com/200/300" alt="cat picture" class="floatright">
+            <p>Hi There! I am Bhargav. Frontend developer works on React and JavaScript</p>
+            <p>I feel one pen, one paper, one laptop, Internet can change the world</p>
+        </article>
+
+        <article id="projects">
+            <h2>Projects</h2>
+
+            <dl>
+                <dt>Weather app</dt>
+                <dd>Used sky api before it was brought by the apple.Used it for fetching the weather data </dd>
+
+                <dt>Todo List App <span>God Bless Todo</span></dt>
+                <dd>Made and Todo List app using React and Redux. It was great</dd>
+
+                <dt>Student Portal</dt>
+                <dd>Build and student portal from scratch with Bootstrap and JavaScript</dd>
+            </dl>
+
+        </article>
+
+        <div class="wrapper">
+            <section id="contact">
+                <h2>Contact Form</h2>
+
+                <p>Fill out the form to contact with me </p>
+                <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES
+  " method="POST">
+                    <input type="hidden" name="send_to" value="endoemo124@gmail.com">
+                    <fieldset>
+                        <legend>Your Contact Information</legend>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                        <label for="email">Email Id </label>
+                        <input type="email" id="email" name="email">
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>Extras</legend>
+                        <label for="comments">Any Other comments?</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+    <footer>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
